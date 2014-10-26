@@ -1,0 +1,70 @@
+<vlayout width="270px" apply="dec.docDecanat.pageControllers.CtrWest"
+	style="overflow:auto;" vflex="1" sclass="divide">
+
+	<!-- Фильтр по курсам  
+		<label value="Выберите курс:"/>
+		<combobox autodrop="true" id="chooseCourse"/>
+		Фильтр по группам  
+		<label value="Выберите группу:"/>
+		<combobox autodrop="true" id="chooseGroup" ><template name="model"><comboitem label="${each.groupName}" /></template></combobox>
+		<label value="Студенты в группе"/>
+		НЕ удалять, может пригодиться -->
+	<!-- Выбор семестра -->
+	<combobox id="cmbChooseSemestr" width="257px"
+		placeholder="Выберите семестр">
+		<template name="model">
+			<comboitem label="${each.namesem}" />
+		</template>
+	</combobox>
+	<combobox id="cmbChooseAmountGS" width="257px"
+		placeholder="Укажите количество семестров">
+		<comboitem label="Все" value="Все"/>
+		<comboitem label="3" value="3"/>
+		<comboitem label="2" value="2"/>
+		<comboitem label="1" value="1"/>
+	</combobox>
+	<hlayout>
+		<!-- Фильтр по курсам -->
+		<listbox rows="5" id="lbChooseCourse" checkmark="true"
+			width="100px" height="185px">
+			<listhead>
+				<listheader width="32px" />
+				<listheader label="Курс" />
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell />
+					<listcell label="${each.name}" />
+				</listitem>
+			</template>
+		</listbox>
+		<!-- Фильтр по группам -->
+		<listbox rows="5" id="lbChooseGroup" checkmark="true"
+			width="150px" height="185px">
+			<listhead>
+				<listheader width="32px" />
+				<listheader label="Группы" />
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell />
+					<listcell label="${each.group.name}" />
+				</listitem>
+			</template>
+		</listbox>
+	</hlayout>
+	<!-- Фильтр студентов по группам -->
+	<combobox id="cmbFilterGroup" width="257px"
+		placeholder="Выберите группу">
+		<template name="model">
+			<comboitem label="${each.group.name}" />
+		</template>
+	</combobox>
+	<!-- Список студентов -->
+	<listbox id="lbListStudents" self="@define(studentList)" rows="6"
+		width="257px" vflex="1">
+		<listhead>
+			<listheader label="Студенты" />
+		</listhead>
+	</listbox>
+</vlayout>

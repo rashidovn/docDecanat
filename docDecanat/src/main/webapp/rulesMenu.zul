@@ -1,0 +1,26 @@
+<?page title="Настройка правил" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="winSetRul" 
+		apply="dec.docDecanat.pageControllers.CtrRulesMenu"
+		border="normal" title="Настройка правил" closable="true">
+		<vlayout>
+			<hlayout>
+				<combobox id="cmbSubTypeOrderEditRule"
+					placeholder="Выберите подтип приказа" width="240px">
+					<template name="model">
+						<comboitem label="${each.name}" />
+					</template>
+				</combobox>
+				<button id="btnAddRules" image="imgs/addaltCLR.png" />
+			</hlayout>
+			<combobox id="cmbChooseRuleMenu"
+				placeholder="Выберите правило" width="240px">
+				<template name="model">
+					<comboitem label="${each.name}" />
+				</template>
+			</combobox>
+		</vlayout>
+		<button id="btnEditRules" label="Изменить"
+			image="imgs/edit.png" />
+	</window>
+</zk>

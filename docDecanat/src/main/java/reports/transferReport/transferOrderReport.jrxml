@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="transferOrderReport" pageWidth="595" pageHeight="842" columnWidth="482" leftMargin="85" rightMargin="28" topMargin="56" bottomMargin="56" isSummaryWithPageHeaderAndFooter="true" uuid="740b2c85-8b85-40fb-9fea-8381533ddd7b">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="cm"/>
+	<style name="Default" isDefault="true" fontName="Courier New" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="cour.ttf" pdfEncoding="cp1251" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="descriptionTitle" class="java.lang.String">
+		<fieldDescription><![CDATA[descriptionTitle]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[description]]></fieldDescription>
+	</field>
+	<field name="listTransferCourse" class="java.util.List">
+		<fieldDescription><![CDATA[listTransferCourse]]></fieldDescription>
+	</field>
+	<field name="foundation" class="java.lang.String">
+		<fieldDescription><![CDATA[foundation]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="194" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="300" height="18" uuid="fbe48488-f922-4f2d-9e09-e7860a24b3e4">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="true" pdfFontName="timesi.ttf"/>
+				</textElement>
+				<text><![CDATA[Министерство образования и науки РФ
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="20" width="400" height="28" uuid="b8edf119-086a-4875-bb78-402ef0920574">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfFontName="timesi.ttf"/>
+				</textElement>
+				<text><![CDATA[Федеральное государственное автономное образовательное учреждение
+высшего профессионального образования
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="48" width="300" height="20" uuid="48f29209-38b2-436e-b8de-9284a5d9684d">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true" pdfFontName="timesbi.ttf"/>
+				</textElement>
+				<text><![CDATA[«СИБИРСКИЙ ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ»]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="68" width="100" height="20" uuid="4d28c93e-3e7a-4ae7-8e17-0bf45c1ac185"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfFontName="timesi.ttf"/>
+				</textElement>
+				<text><![CDATA[ПРИКАЗ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="96" width="189" height="14" uuid="4d70c7ef-bf21-43fa-b2bf-0e40b0c83c96">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="Courier New" size="12"/>
+				</textElement>
+				<text><![CDATA[Институт космических и]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="259" y="96" width="220" height="20" uuid="0f7bffe8-292a-4f65-9498-f8108daf6690"/>
+				<textElement>
+					<font fontName="Courier New" size="11"/>
+				</textElement>
+				<text><![CDATA[«   »______2014г. № _______]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="110" width="189" height="14" uuid="90570b77-5e49-4d26-8235-214eb884e7b7">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="Courier New" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[информационных технологий]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="129" width="189" height="20" uuid="31d23e2f-b6ea-4df1-a193-507dba202814">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="Courier New" size="12" isBold="true" isItalic="false" pdfFontName="courbd.ttf"/>
+				</textElement>
+				<text><![CDATA[Переводной приказ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="162" y="174" width="100" height="14" uuid="f8d55a6b-4e57-4b81-af88-9663d20fb632">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New" size="12" isBold="true" isItalic="false" pdfFontName="courbd.ttf"/>
+				</textElement>
+				<text><![CDATA[ПРИКАЗЫВАЮ:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="0" y="154" width="482" height="14" uuid="76436ccc-ecf7-462d-96f1-c2c87e6aebb0">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descriptionTitle}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="0" y="0" width="479" height="14" uuid="e5b4ec08-ef8b-4795-9ec0-cce5051d8eec">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement positionType="Float" x="0" y="14" width="479" height="14" uuid="eef6fede-a92c-4cdf-9f79-99ca53a7d87c">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listTransferCourse})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["C:\\Alfresco\\tomcat\\webapps\\docDecanat\\WEB-INF\\classes\\reports\\transferReport\\transferCourseReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="16">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="446" y="1" width="33" height="14" uuid="be6df283-e61b-4f4f-a5bd-ba23656500e3">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="false" isItalic="false" pdfFontName="times.ttf"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="23">
+			<staticText>
+				<reportElement positionType="Float" x="0" y="0" width="120" height="20" uuid="922b11e2-87cc-4cf5-bf67-a9eafcfebd4b">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="true" isItalic="false" pdfFontName="courbd.ttf"/>
+				</textElement>
+				<text><![CDATA[Исполнил: 2 плошадка,   Л.Н.Карпушенко 2912-237.]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="218">
+			<staticText>
+				<reportElement x="0" y="190" width="111" height="14" uuid="e8c6622d-5bba-4305-a666-302308d0f79b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[Директор:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="358" y="6" width="111" height="14" uuid="cff317f8-30ed-40ca-82d1-6ca2ef3e6e04">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New" size="12" isBold="true" isItalic="false" pdfFontName="courbd.ttf"/>
+				</textElement>
+				<text><![CDATA[Е.А. Ваганов]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="36" width="111" height="14" uuid="63794e22-6cee-4db1-80ff-b85cb72d8113">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[СОГЛАСОВАНО:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="358" y="60" width="111" height="14" uuid="2ebbb277-5561-4e23-a425-da4c69bdd8ca">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[Ф.А. Цвижба]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="6" width="111" height="14" uuid="0fc008b1-4e9a-4b38-9d90-45141920ae62">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New" size="12" isBold="true" isItalic="false" pdfFontName="courbd.ttf"/>
+				</textElement>
+				<text><![CDATA[Ректор:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="358" y="190" width="111" height="14" uuid="e0ab9c8b-fa18-464b-a002-621f6e3af425">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[Г.М. Цибульский]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="180" height="29" uuid="99083f7c-89e2-4fa8-b731-948a18c6f633">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[Зам. первого проректора
+по экономике и развитию: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="111" height="14" uuid="b0cea44e-986f-4792-a73c-ba22654d06b6">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[Гл.бухгалтер:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="358" y="97" width="121" height="14" uuid="dd4c0a2b-9de8-4262-8114-17a69b5e0876">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[Н.В. Самарникова]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="148" width="111" height="14" uuid="aed3b597-ea94-43d4-a8c5-e7a32d2cfecc">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[И.А. Зырянов]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="140" width="180" height="31" uuid="17550e26-e2f2-45f3-bb6f-cf7531fbb3f2">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New"/>
+				</textElement>
+				<text><![CDATA[Зам. проректора по
+учебной работе:]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="210" width="535" height="1" uuid="befaf025-27e4-4125-83c5-bbc9ef01f44c">
+					<printWhenExpression><![CDATA[($V{PAGE_NUMBER}.intValue()%2)==1]]></printWhenExpression>
+				</reportElement>
+			</break>
+		</band>
+	</summary>
+</jasperReport>

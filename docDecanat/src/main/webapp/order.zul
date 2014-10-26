@@ -1,0 +1,67 @@
+<?page title="Приказ" contentType="text/html;charset=UTF-8"?>
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="layout/template.zul"?>
+
+<groupbox id="orderAll" self="@define(content)"
+	apply="dec.docDecanat.pageControllers.CtrOrder" height="100%">
+	<borderlayout id="blMain" hflex="1" vflex="1">
+		<north height="100px" border="none" sclass="order">
+			<!-- Параметры приказа -->
+			<vlayout>
+				<button id="btnCreateOrder" label="Создать приказ"
+					style="font-weight:bold;" height="35px" />
+				<hlayout id="hlHeader" hflex="1" height="38px">
+
+					<hbox hflex="min">
+						<button id="btnSaveOrder"
+							label="Сохранить изменения" height="35px"
+							style="font-weight:bold;" width="150px" />
+						<button tooltip="Просмотр" image="imgs/read.png"
+							label="Предпросмотр" style="font-weight:bold;" height="35px"
+							id="btnReadOrder" width="150px" />
+					</hbox>
+
+					<hbox align="center" pack="center" hflex="1">
+						<label value="Дата создания:" sclass="b"
+							width="190px" />
+						<datebox id="dateOfBeginOrder"
+							placeholder="Выберите дату" width="150px" />
+						<label value="Дата подписания:" sclass="b" />
+						<datebox id="dateOfEndOrder"
+							placeholder="Выберите дату" width="150px" />
+						<button id="btnOrderWriteToday"
+							label="Подписан сегодня" height="35px" />
+						<textbox id="txtNumberOrder" width="150px"
+							placeholder="Номер приказа" />
+					</hbox>
+
+					<hbox hflex="1" pack="end">
+						<button id="btnReCreateOrder"
+							label="Пересоздать приказ" image="imgs/refresh.png" height="35px"
+							style="font-weight:bold;" />
+					</hbox>
+				</hlayout>
+				<label id="lbRuleNameOrder"
+					value=" Наименование приказа:" sclass="b" />
+				<textbox id="txtRuleNameOrder"
+					placeholder="Укажите наименование приказа" multiline="true"
+					height="20px" hflex="1" />
+			</vlayout>
+		</north>
+		<center autoscroll="true">
+			<!-- Структура приказа -->
+			<groupbox id="gbBodyOrder" sclass="orderbody">
+
+				<label value="Описание приказа:" sclass="b" />
+				<separator />
+				<textbox id="txtRuleDescriptionOrder"
+					placeholder="Укажите описание приказа" multiline="true"
+					height="60px" width="99%" />
+				<separator />
+				<vlayout id="orderField">
+					<!-- Динамическое содержание приказа  -->
+				</vlayout>
+			</groupbox>
+		</center>
+	</borderlayout>
+</groupbox>
+

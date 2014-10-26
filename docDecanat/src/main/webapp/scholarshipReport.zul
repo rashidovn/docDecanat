@@ -1,0 +1,53 @@
+<zk>
+	<window width="70%" height="100%" title="Обзор документа"
+		border="normal" closable="true" use="reports.scholarshipReport.ctrScholarshipReport"
+		id="showReport">
+		<vlayout width="100%" height="100%">
+			<hbox width="100%">
+				<vlayout id="sectionLay">
+					<label style="font-size: 10pt" pre="true"
+						value=" По пунктам:" />
+					<hlayout>
+						<toolbarbutton style="font-size: 10pt"
+							image="imgs/pdf.png" label="Просмотреть в формате pdf."
+							onClick="showReport.toPdf()" tooltiptext="Открыть в формате PDF" />
+					</hlayout>
+					<hlayout>
+						<toolbarbutton style="font-size: 10pt"
+							image="imgs/doc.png" label="Сохранить в формате docx."
+							onClick="showReport.toDocx()"
+							tooltiptext="Сохранить в формате DOCX" />
+					</hlayout>
+				</vlayout>
+				<vlayout id="groupLay">
+					<label style="font-size: 10pt" pre="true"
+						value=" По группам:" />
+					<hlayout>
+						<toolbarbutton style="font-size: 10pt"
+							image="imgs/pdf.png" label="Просмотреть в формате pdf."
+							onClick="showReport.toPdf2()"
+							tooltiptext="Открыть в формате PDF" />
+					</hlayout>
+					<hlayout>
+						<toolbarbutton style="font-size: 10pt"
+							image="imgs/doc.png" label="Сохранить в формате docx."
+							onClick="showReport.toDocx2()"
+							tooltiptext="Сохранить в формате DOCX" />
+					</hlayout>
+				</vlayout>
+				<hbox hflex="1" pack="end">
+					<button height="50px"
+						style="font-size: 10pt; font-weight: bold;"
+						label="Отправить на согласование"
+						onClick="showReport.uploadFile()" />
+				</hbox>
+			</hbox>
+			<html>
+				<br />
+			</html>
+			<groupbox width="100%" vflex="1">
+				<iframe id="iframe" width="100%" height="100%" />
+			</groupbox>
+		</vlayout>
+	</window>
+</zk>

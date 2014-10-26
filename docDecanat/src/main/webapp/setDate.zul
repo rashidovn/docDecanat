@@ -1,0 +1,73 @@
+<?page title="Настройка даты" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="winSetDate"
+		apply="dec.docDecanat.pageControllers.CtrSetDate" border="normal"
+		title="Настройка даты" closable="true">
+		<vlayout>
+			<hlayout>
+				<combobox id="cmbSetDateChooseSem"
+					placeholder="Выберите семестр" width="300px">
+					<template name="model">
+						<comboitem label="${each.namesem}" />
+					</template>
+				</combobox>
+
+				<combobox id="cmbSetDateChooseCourse"
+					placeholder="Выберите курс">
+					<template name="model">
+						<comboitem label="${each.name}" />
+					</template>
+				</combobox>
+			</hlayout>
+			<listbox id="lbChoose" rows="6" width="500px"
+				checkmark="true" multiple="true" />
+			<vlayout>
+				<!-- Semestr -->
+				<hlayout spacing="20px">
+					<vlayout>
+						<label value="Начало семестра" />
+						<datebox id="dtbSetDateBeginSem"
+							placeholder="Начало семестра" width="200px" />
+					</vlayout>
+
+					<vlayout>
+						<label value="Конец семестра" />
+						<datebox id="dtbSetDateEndSem"
+							placeholder="Конец семестра" width="200px" />
+					</vlayout>
+				</hlayout>
+
+				<!-- Pass -->
+				<hlayout spacing="20px">
+					<vlayout>
+						<label value="Начало зачетной недели" />
+						<datebox id="dtbSetDateBeginPass"
+							placeholder="Начало зачетной недели" width="200px" />
+					</vlayout>
+
+					<vlayout>
+						<label value="Конец зачетной недели" />
+						<datebox id="dtbSetDateEndPass"
+							placeholder="Конец зачетной недели" width="200px" />
+					</vlayout>
+				</hlayout>
+
+				<!-- Session -->
+				<hlayout spacing="20px">
+					<vlayout>
+						<label value="Начало сессии" />
+						<datebox id="dtbSetDateBeginSes"
+							placeholder="Начало сессии" width="200px" />
+					</vlayout>
+
+					<vlayout>
+						<label value="Конец сессии" />
+						<datebox id="dtbSetDateEndSes"
+							placeholder="Конец сессии" width="200px" />
+					</vlayout>
+				</hlayout>
+				<button id="saveSetDate" label="Сохранить" />
+			</vlayout>
+		</vlayout>
+	</window>
+</zk>

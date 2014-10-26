@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sectionProxyCourse" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="64cab1f7-1020-4ffc-bb78-24c8c3433ec9">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Default" isDefault="true" fontName="Courier New" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="cour.ttf" pdfEncoding="cp1251" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="course" class="java.lang.Integer">
+		<fieldDescription><![CDATA[course]]></fieldDescription>
+	</field>
+	<field name="listProxyGroup" class="java.util.List">
+		<fieldDescription><![CDATA[listProxyGroup]]></fieldDescription>
+	</field>
+	<field name="foundation" class="java.lang.String">
+		<fieldDescription><![CDATA[foundation]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="47" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="120" height="14" uuid="7ce53cc8-bd8c-4800-a923-0538aedd5fef">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Курс " + $F{course}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="24" width="450" height="14" uuid="310e3058-e136-4aea-86e4-af188fcc192e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listProxyGroup})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["C:\\Alfresco\\tomcat\\webapps\\docDecanat\\WEB-INF\\classes\\reports\\scolarshipReport\\sectionGroupReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<summary>
+		<band height="17">
+			<textField>
+				<reportElement x="0" y="0" width="450" height="14" uuid="16c18c5d-32e3-45fe-a078-124a7224d548">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{foundation}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

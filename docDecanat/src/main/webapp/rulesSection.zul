@@ -1,0 +1,54 @@
+<zk>
+	<window id="winRulSection" title="Натстройки пунктов"
+		border="normal" width="400px"
+		apply="dec.docDecanat.pageControllers.CtrRulesSection"
+		position="center,center" closable="true"
+		action="show: slideDown;hide: slideUp">
+
+		<hlayout>
+			<label value="Название:" sclass="b" />
+			<textbox id="tbName"
+				placeholder="Отображаемое название пункта" hflex="1" />
+		</hlayout>
+		<vlayout>
+			<html>
+				<br />
+			</html>
+			<hlayout>
+				<label value="Описание: " sclass="b" />
+				<image width="15px" height="15px" src="imgs/info.png"
+					tooltiptext="Данное поле содержит в себе отображаемую формулировку в приказе по данному пункту" />
+			</hlayout>
+			<textbox id="tbDescription" height="90px"
+				placeholder="Напишите описание пункта" hflex="1" multiline="true" />
+			<label value="" />
+		</vlayout>
+		<html>
+			<br />
+		</html>
+		<label value="Допускается: " sclass="b" />
+		<image width="15px" height="15px" src="imgs/info.png"
+			tooltiptext="Требуется указать допустимое количество каждого типа оценок для занесения студента в данный пункт" />
+		<vlayout id="vlSecParam" />
+		<!-- Параметры отбора студентов -->
+		<vlayout>
+			<html>
+				<br />
+			</html>
+			<textbox id="txtSectionFoundation"
+				placeholder="Укажите основание" hflex="1" />
+			<html>
+				<br />
+			</html>
+			<hbox hflex="1" vflex="1" pack="end">
+				<hlayout>
+					<button forEach="end" id="btnSaveRuleSection"
+						label="Применить" image="imgs/okCLR.png" />
+					<button forEach="end" id="btnCancelSaveRuleSection"
+						label="Отмена" image="imgs/crossCLR.png" />
+				</hlayout>
+			</hbox>
+		</vlayout>
+	</window>
+
+</zk>

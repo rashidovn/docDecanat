@@ -1,0 +1,40 @@
+.b{
+	font-weight: bold;
+	//выделение жирным, в описании пункта
+}
+.divide{
+	background: #e5d3b1;
+}
+.error{
+	color:red;
+}
+.correct{
+	color: green;
+}
+.order{
+	background: #ced4e2;
+}
+.orderbody{
+	background: #f5e9ec;
+}
+.section{
+	background: #e3e9f7;
+	border-color: black;
+}
+.lblHeadRule{
+	color: #9daccb;
+	font-size: 16px ;	
+}
+.NotPrintSection{	
+	background: #8FBC8F;
+	text-align: left;
+}
+.PrintSection{	
+	background: #FA8072;
+	text-align: left;
+}
+
+.headSection{
+	font-weight:bold;
+	text-align: center;
+}

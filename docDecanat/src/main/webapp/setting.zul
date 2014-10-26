@@ -1,0 +1,7 @@
+<zk>
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="layout/templateOnlyHead.zul"?>
+<groupbox id="setting" width="300px" apply="dec.docDecanat.pageControllers.CtrSetting" self="@define(content)" >
+<button id="settingRule" label="Правила"  />
+<button id="settingDate" label="Даты "  />
+</groupbox>
+</zk>

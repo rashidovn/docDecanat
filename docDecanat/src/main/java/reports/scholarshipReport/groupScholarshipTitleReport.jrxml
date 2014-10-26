@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="titleReport" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9c151ca1-78f4-41c7-9274-2d0893c7455a">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Default" isDefault="true" fontName="Courier New" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="cour.ttf" pdfEncoding="cp1251" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="title" class="java.lang.String">
+		<fieldDescription><![CDATA[title]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="381" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="21" width="401" height="36" uuid="295bd3c5-1903-4f68-bf29-856140ef9f09">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" pdfFontName="timesi.ttf"/>
+					<paragraph tabStopWidth="0"/>
+				</textElement>
+				<text><![CDATA[Федеральное государственное автономное образовательное учреждение
+высшего профессионального образования
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="0" width="304" height="21" uuid="62f55640-fde9-4a40-b36f-0436af78d0b6"/>
+				<box topPadding="2" leftPadding="3" bottomPadding="2" rightPadding="1">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="true" pdfFontName="timesi.ttf"/>
+				</textElement>
+				<text><![CDATA[Министерство образования и науки РФ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="57" width="304" height="19" uuid="eca719cb-e7ef-47c9-8288-5696f8f5132b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true" pdfFontName="timesbi.ttf"/>
+				</textElement>
+				<text><![CDATA[«СИБИРСКИЙ ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ»]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="156" height="25" uuid="bdaf9665-770e-4695-9b27-d920b5743265"/>
+				<textElement rotation="None">
+					<font fontName="Courier New" size="10" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ИНСТИТУТ КОСМИЧЕСКИХ И ИНФОРМАЦИОННЫХ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="265" y="125" width="76" height="20" uuid="9fd7431f-7874-43df-b111-90045e68a4bf"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[№__________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="156" y="76" width="100" height="20" uuid="6b2e2a0a-8c7d-49ed-aae1-55b7e5f992c7">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="false" pdfFontName="times.ttf"/>
+				</textElement>
+				<text><![CDATA[ПРИКАЗ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="125" width="55" height="20" uuid="b04fe2cb-4e27-48e4-9638-557f18de3167"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[от_________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="156" width="200" height="42" uuid="9b81d2be-4656-4fc3-9746-bb1dc582bcd2">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true" isItalic="false" pdfFontName="timesbd.ttf"/>
+				</textElement>
+				<text><![CDATA[О назначении на государственную академическую стипендию]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="212" width="396" height="88" uuid="d0687d91-11bd-46b1-80bd-6e3fd020b280"/>
+				<textElement textAlignment="Justified">
+					<paragraph firstLineIndent="20"/>
+				</textElement>
+				<text><![CDATA[В соответствии с Уставом СФУ, на основании Положения о стипендиальном обеспечении и других формах материальной поддержки студентов, аспирантов и докторантов Федерального государственного автономного образовательного учреждения высшего профессионального образования "Сибирский федеральный университет",]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="310" width="100" height="20" uuid="5a583c1c-f007-494b-ac14-9fceb26aa8b8"/>
+				<text><![CDATA[ПРИКАЗЫВАЮ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="340" width="396" height="30" uuid="262fbf16-c06a-4da0-bad6-6b144379db64"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[Провести назначение на государственную академическую стипендию следующих студентов:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="125" width="156" height="12" uuid="ca820a1e-75e7-4f2e-b555-7acb5f2ff6a9">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Courier New" size="10" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ТЕХНОЛОГИЙ           ]]></text>
+			</staticText>
+			<line>
+				<reportElement style="Default" mode="Opaque" x="0" y="137" width="156" height="1" uuid="689894a8-a0ac-4c76-864c-8671b0c868b9">
+					<property name="local_mesure_unitheight" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.2" lineStyle="Solid" lineColor="#000000"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

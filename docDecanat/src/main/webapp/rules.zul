@@ -1,0 +1,46 @@
+<?page title="Параметры правила" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="winRul" title="Параметры правила" border="normal"
+		apply="dec.docDecanat.pageControllers.CtrRules" closable="true">
+		<vlayout>
+			<hlayout>
+				<label value="Название:" sclass="b" />
+				<textbox id="txtRuleName" placeholder="Укажите название"
+					hflex="1" />
+			</hlayout>
+				<textbox id="txtRuleDescription"
+					placeholder="Укажите описание приказа" multiline="true"
+					height="40px" hflex="1"/>
+					<checkbox id="chCommonPersonal" label="Общий" tooltiptext="Общий/индивидуальный"/>
+			<hlayout>
+				<vlayout>
+					<hlayout>
+						<label value="Пункты" />
+						<button image="imgs/addaltCLR.png"
+							id="btnAddSection" />
+					</hlayout>
+					<vlayout id="vlSection" width="450px" />
+					<!-- Список правил -->
+				</vlayout>
+				<vlayout visible="false">
+					<hlayout>
+						<label id="lbPersons" value="Персоны" visible="false" />
+						<button image="imgs/addaltCLR.png"
+							id="btnAddPerson" visible="false" />
+					</hlayout>
+					<vlayout id="vlPersonal" width="450px" visible="false" />
+					<!-- Список персон-->
+				</vlayout>
+
+			</hlayout>
+			<hbox hflex="1" vflex="1" pack="end">
+				<hlayout>
+					<button forEach="end" id="btnSaveRule"
+						label="Применить" image="imgs/okCLR.png" />
+					<button forEach="end" id="btnCancelSaveRule"
+						label="Отмена" image="imgs/crossCLR.png" />
+				</hlayout>
+			</hbox>
+		</vlayout>
+	</window>
+</zk>

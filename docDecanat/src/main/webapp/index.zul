@@ -1,0 +1,6 @@
+<?page title="Список приказов"?>
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="layout/templateOnlyHead.zul"?>
+
+<!-- Таблица с приказами -->
+
+<groupbox id="gbTableAllorder" self="@define(content)" apply="dec.docDecanat.pageControllers.CtrIndex" />

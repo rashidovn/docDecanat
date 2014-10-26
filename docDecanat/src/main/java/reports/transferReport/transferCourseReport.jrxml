@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="transferCourseReport" pageWidth="595" pageHeight="842" columnWidth="590" leftMargin="0" rightMargin="5" topMargin="5" bottomMargin="5" uuid="d74da467-27dd-43e6-8872-1f33e1d6ad14">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<style name="Default" isDefault="true" fontName="Courier New" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="cour.ttf" pdfEncoding="cp1251" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="course" class="java.lang.Integer">
+		<fieldDescription><![CDATA[course]]></fieldDescription>
+	</field>
+	<field name="listTransferGroup" class="java.util.List">
+		<fieldDescription><![CDATA[listTransferGroup]]></fieldDescription>
+	</field>
+	<field name="foundation" class="java.lang.String">
+		<fieldDescription><![CDATA[foundation]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="187" y="2" width="180" height="14" uuid="b2e0a83a-bcfd-4464-89d5-0b4c6945e77b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified">
+					<font fontName="Courier New" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["На " + $F{course} + " курс"]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="19" width="550" height="16" uuid="fe85da0b-7c2c-415d-b5c1-e2c76af882bc">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+				</reportElement>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listTransferGroup})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["C:\\Alfresco\\tomcat\\webapps\\docDecanat\\WEB-INF\\classes\\reports\\transferReport\\transferGroupReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<summary>
+		<band height="19">
+			<textField>
+				<reportElement x="0" y="0" width="566" height="14" uuid="9cd329be-cc5a-4ad5-8ac7-d3b5c77bfc23">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{foundation}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studentReport" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="5" bottomMargin="5" uuid="a77afef1-d5b5-40b1-b5cc-5d6954b90e5d">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<style name="Default" isDefault="true" fontName="Courier New" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="cour.ttf" pdfEncoding="cp1251" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="family" class="java.lang.String">
+		<fieldDescription><![CDATA[family]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="patronymic" class="java.lang.String">
+		<fieldDescription><![CDATA[patronymic]]></fieldDescription>
+	</field>
+	<field name="recordBook" class="java.lang.String">
+		<fieldDescription><![CDATA[recordBook]]></fieldDescription>
+	</field>
+	<sortField name="family"/>
+	<variable name="countNumber" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[Boolean.TRUE]]></variableExpression>
+	</variable>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="122" height="14" uuid="880b4cec-4de0-40f5-ab27-48ec4c8f531e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[String.valueOf($V{countNumber}) + ". (#" + $F{recordBook} + ") "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="0" width="330" height="14" uuid="f485c998-ebaf-459c-89eb-a3871bcc957a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{family} + " " + $F{name} + " " + $F{patronymic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

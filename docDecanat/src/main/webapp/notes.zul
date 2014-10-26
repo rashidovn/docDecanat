@@ -1,0 +1,24 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="winNotes" title="" border="normal"
+		apply="dec.docDecanat.pageControllers.CtrNotes" width="1000px" closable="true" >
+		<listbox id="lbNotes">
+			<listhead>
+				<listheader label="ФИО" width="100px"/>
+				<listheader label="Откуда" width="100px"/>
+				<listheader label="Куда" width="100px"/>
+				<listheader label="Причина" width="680px"/>
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell
+						label="${each.sss.studentCard.humanface.family}" />
+					<listcell label="${each.orruStart.section.name}" />
+					<listcell label="${each.orruFinish.section.name}" />
+					<listcell><html>${each.note}</html></listcell>
+				</listitem>
+			</template>
+		</listbox>
+		<button id="btnCloseNotes" label="Закрыть" />
+	</window>
+</zk>

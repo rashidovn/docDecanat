@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="transferStudentReport" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="2" bottomMargin="2" uuid="0e9e20d6-d812-4598-b46b-4e88674f7ac7">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<style name="Default" isDefault="true" fontName="Courier New" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="cour.ttf" pdfEncoding="cp1251" isPdfEmbedded="true"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="family" class="java.lang.String">
+		<fieldDescription><![CDATA[family]]></fieldDescription>
+	</field>
+	<field name="patronymic" class="java.lang.String">
+		<fieldDescription><![CDATA[patronymic]]></fieldDescription>
+	</field>
+	<field name="recordBook" class="java.lang.String">
+		<fieldDescription><![CDATA[recordBook]]></fieldDescription>
+	</field>
+	<variable name="countNumber" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[Boolean.TRUE]]></variableExpression>
+	</variable>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="-3" y="0" width="150" height="14" uuid="ae070f99-5a87-4029-9f54-052086cb764e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[String.valueOf($V{countNumber}) + ". " + "(# " + $F{recordBook} + ")"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="147" y="0" width="260" height="14" uuid="84ebdbff-e1bb-4665-a4b6-48679d84b901"/>
+				<textFieldExpression><![CDATA[$F{family} + " " + $F{name} + " " + $F{patronymic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

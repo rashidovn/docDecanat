@@ -1,0 +1,12 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window id="winMoveStudent" title="Перемещение студентов в пункт" border="normal" apply="dec.docDecanat.pageControllers.CtrCmbChooseSection" width="310px">
+<vlayout id="vlMoveStudent"/>
+<hbox hflex="1" vflex="1" pack="end" >
+			<hlayout>
+				<button forEach="end" id="btnMoveStudent" label="Переместить" image="imgs/okCLR.png"/>	
+				<button forEach="end" id="btnCancelMoveStudent" label="Отмена" image="imgs/crossCLR.png"/>
+			</hlayout>
+		</hbox>
+</window>
+</zk>

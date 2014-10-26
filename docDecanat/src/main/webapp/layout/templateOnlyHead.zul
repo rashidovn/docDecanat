@@ -1,0 +1,12 @@
+<zk>
+<style src="style.css" />
+<borderlayout hflex="1" vflex="1">
+        <north height="50px" border="none" >
+            <include src="layout/head.zul"/>
+            <!-- шапка -->
+        </north>
+        <center self="@insert(content)" id="mainContent" autoscroll="true" hflex="1" vflex="1">
+        <!-- Сюда контент -->        
+        </center>
+ </borderlayout>
+ </zk>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<!-- домашняя версия 		-->
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/eDecanat</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="connection.password">41001256</property>
+		<mapping class="dec.docDecanat.data.entity.Curriculum" />
+		<mapping class="dec.docDecanat.data.entity.DicSubject" />
+		<mapping class="dec.docDecanat.data.entity.Employee" />
+		<mapping class="dec.docDecanat.data.entity.Group" />
+		<mapping class="dec.docDecanat.data.entity.GroupSemester" />
+		<mapping class="dec.docDecanat.data.entity.GroupSubject" />
+		<mapping class="dec.docDecanat.data.entity.Humanface" />
+		<mapping class="dec.docDecanat.data.entity.Link_note_student_semester_status_order" />
+		<mapping class="dec.docDecanat.data.entity.Link_rule_employee" />
+		<mapping class="dec.docDecanat.data.entity.Order" />
+		<mapping class="dec.docDecanat.data.entity.OrderRule" />
+		<mapping class="dec.docDecanat.data.entity.OrderStatusType" />
+		<mapping class="dec.docDecanat.data.entity.OrderSubType" />
+		<mapping class="dec.docDecanat.data.entity.OrderType" />
+		<mapping class="dec.docDecanat.data.entity.Rule" />
+		<mapping class="dec.docDecanat.data.entity.SchoolYear" />
+		<mapping class="dec.docDecanat.data.entity.Section" />
+		<mapping class="dec.docDecanat.data.entity.Semester" />
+		<mapping class="dec.docDecanat.data.entity.SessionRating" />
+		<mapping class="dec.docDecanat.data.entity.StatusType" />
+		<mapping class="dec.docDecanat.data.entity.StudentSemesterStatus" />
+		<mapping class="dec.docDecanat.data.entity.StudentCard" />
+		<mapping class="dec.docDecanat.data.entity.Subject" />
+	</session-factory>
+</hibernate-configuration>

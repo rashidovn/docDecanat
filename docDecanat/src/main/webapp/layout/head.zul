@@ -1,0 +1,73 @@
+<groupbox xmlns:w='client' height="50px"
+	apply="dec.docDecanat.pageControllers.CtrHead">
+	<hlayout height="40px">
+		<button id="btnListOrder" image="imgs/home.png" width="40px"
+			height="40px"/>
+		<!-- Новый приказ -->
+		<hlayout>
+			<button id="btnAdd" height="40px" width="40px"
+				image="imgs/addaltCLR.png" />
+
+			<hlayout id="hlCreadOrder" sclass="add">
+				<!-- Тип, не удалять-->
+				<combobox id="cmbNewTypeDoc" width="150px"
+					placeholder="Тип документа">
+					<template name="model">
+						<comboitem label="${each.name}" />
+					</template>
+				</combobox>
+				<!-- Подтип -->
+				<combobox id="cmbNewSubTypeDoc" width="150px"
+					placeholder="Подтип документа">
+					<template name="model">
+						<comboitem label="${each.name}" />
+					</template>
+				</combobox>
+				<!-- Правило -->
+				<combobox id="cmbChooseRule" height="30px" width="150px"
+					placeholder="Выберите правило">
+					<template name="model">
+						<comboitem label="${each.name}" />
+					</template>
+				</combobox>
+				<button id="btnGoToOrder" image="imgs/ok.png"
+					width="40px" height="40px" />
+			</hlayout>
+			<!-- Выбранное правило -->
+			<label id="lbErrorWest" value="Нет правила" />
+
+		</hlayout>
+		<!-- Фильтр -->
+		<!-- <vbox width="1110px" align="right"> -->
+		<hbox hflex="min" vflex="1" pack="end">
+			<button height="40px" id="btnSearchStudent" label="Открыть окно" />
+			<button forEach="end" id="btnFilter" height="40px"
+				width="40px" image="imgs/search.png" sclass="btnFilter" />
+			<hlayout id="hlFilter">
+				<textbox id="txtFilterNumberOrder" width="70px"
+					placeholder="№" />
+				<!-- Тип, не удалять
+					<combobox id="cmbFilterTypeDoc" width="150px" placeholder="Тип документа">
+					<template name="model">
+					<comboitem label="${each.name}"/>
+					</template>
+					</combobox>
+				-->
+				<combobox id="cmbFilterSubTypeDoc" width="150px"
+					placeholder="Подтип документа">
+					<template name="model">
+						<comboitem label="${each.name}" />
+					</template>
+				</combobox>
+				<datebox id="dateFilterBegin" width="100px"
+					placeholder="Дата создания" />
+				<combobox width="100px" placeholder="Статус">
+					<comboitem label="Подписанные" />
+					<comboitem label="Не подписанные" />
+				</combobox>
+			</hlayout>
+			<button forEach="end" id="btnAllSetting" height="40px"
+				image="imgs/setting.png" />
+		</hbox>
+	</hlayout>
+</groupbox>

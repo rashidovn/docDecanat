@@ -1,0 +1,34 @@
+<window width="65%" height="100%" title="Поиск студента" border="normal" closable="true" id="winSearchStudent" apply="dec.docDecanat.pageControllers.CtrSearchStudent">
+	<vlayout >
+		<hbox width="100%">
+			<vlayout>
+				<label style="font-size: 10pt" pre="true" value="Поиск по ФИО:" />
+				<hlayout>
+					<textbox id="tbSecondName" placeholder="Фамилия"/>
+					<textbox id="tbFirstName" placeholder="Имя"/>
+					<textbox id="tbPatronymicName" placeholder="Отчество"/> 
+				</hlayout>
+			</vlayout>
+			<vlayout>
+				<label style="fon-size: 10pt" pre="true" value="Поиск по группе:" />
+				<hlayout>
+					<textbox id="tbGroupName" placeholder="Название группы" />
+				</hlayout>
+			</vlayout>
+			<vlayout>
+				<button id="btnSearch" />
+			</vlayout>
+		</hbox>	
+	</vlayout>
+	<hlayout height="90%" apply="dec.docDecanat.pageControllers.CtrSearchStudent">
+		<listbox id="lbSearchStudent"  />
+		<vbox spacing="10px" width="24px">
+			    <image style="cursor:pointer" id="chooseAllBtn" src="img/arrow.png" />
+		        <image style="cursor:pointer" id="chooseBtn" src="img/add.png" />
+		        <image style="cursor:pointer" id="removeBtn" src="img/unarrow.png" />
+		        <image style="cursor:pointer" id="removeAllBtn" src="img/add.png" />
+		</vbox>
+		<listbox id="lbChosenStudents" />
+	</hlayout>	
+
+</window>

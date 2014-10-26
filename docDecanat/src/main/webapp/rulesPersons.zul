@@ -1,0 +1,30 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="winRulPersons" title="Редактирование персон"
+		border="normal" apply="dec.docDecanat.pageControllers.CtrRulesPersons"
+		closable="true" width="500px">
+
+		<label value="Выберите действие:" />
+		<combobox autodrop="true" id="cmbChooseActionPerson" />
+		<listbox rows="10" id="lbChoosePersons" checkmark="true"
+			width="480px">
+			<listhead>
+				<listheader label="Персоны" />
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell label="${each.humanface.family}" />
+				</listitem>
+			</template>
+		</listbox>
+
+		<hbox width="480px" vflex="1" pack="end">
+			<hlayout>
+				<button forEach="end" id="btnSaveRulePersons"
+					label="Применить" image="imgs/okCLR.png" />
+				<button forEach="end" id="btnCancelSaveRulePersons"
+					label="Отмена" image="imgs/crossCLR.png" />
+			</hlayout>
+		</hbox>
+	</window>
+</zk>
